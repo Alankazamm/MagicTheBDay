@@ -38,11 +38,11 @@ var goFS = document.getElementById('goFS');
     function () {
         if(fs === false){
             document.getElementById('bg-div').requestFullscreen();
+           
             fs = true;
         }
         if(fs === true){
             document.exitFullscreen();
-
             fs = false;
         }
     }
