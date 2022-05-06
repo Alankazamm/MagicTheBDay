@@ -22,7 +22,8 @@ function render(idSet){
     }
     else{
         document.getElementById('plane-desc').innerHTML='';
-    document.body.style.backgroundImage = "url('./imgs/img-"+idSet+".jpg')";
+        document.getElementById('bg-div').style.backgroundImage = "url('./imgs/img-"+idSet+".jpg')";
+ 
     document.body.dataset.setedId = idSet;
     const description = document.createElement('h2');
     description.innerText = textArray[idSet-1];
@@ -30,4 +31,12 @@ function render(idSet){
    
     }
 }
+var goFS = document.getElementById('goFS');
+  goFS.addEventListener(
+    'click',
+    function () {
+        document.getElementById('bg-div').requestFullscreen();
+    },
+    false,
+  );
 
