@@ -47,7 +47,38 @@ body{
     left:50%;
     transform:translateX(-50%);
     z-index:200;
+    height:40px;
+    width:40px;
+    background-image:url(./imgs/pw-symbol.png);
+    background-size:cover;
+    cursor:pointer;
+    box-shadow:0.5px 0.2px 2px rgba(0,0,0,0.9);
+    background-color:rgba(255,255,255,0.3);
+    background-repeat: no-repeat;
+    background-position:center;
+    border-radius:50%;
+    
 
+}
+]#planeswalk-btn:active{
+    
+    background-color:rgba(255, 255, 255, 0.30.8);
+    opacity:1;
+}
+#goFS{
+    margin:30px;
+    width:20px;
+    height:20px;
+    background-size:cover;
+    border:none;
+    background-color:rgba(255, 255, 255, 0.1);
+    background-image:url(./imgs/fs-icon.png);
+    
+   cursor:pointer;
+}
+#goFS:active{
+    background-color:rgba(255, 255, 255, 0.3);
+    box-shadow:0.5px 0.2px 2px rgba(243, 243, 243, 0.9);
 }
 
 @media only screen and (min-width: 320px) and (max-width: 767px) and (orientation: portrait) {
