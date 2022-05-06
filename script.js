@@ -31,12 +31,20 @@ function render(idSet){
    
     }
 }
+let fs = false
 var goFS = document.getElementById('goFS');
   goFS.addEventListener(
     'click',
     function () {
-        document.getElementById('bg-div').requestFullscreen();
-    },
-    false,
+        if(fs === false){
+            document.getElementById('bg-div').requestFullscreen();
+            fs = true;
+        }
+        if(fs === true){
+            document.exitFullscreen();
+
+            fs = false;
+        }
+    }
   );
 
