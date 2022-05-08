@@ -5,11 +5,12 @@ if(window.orientation == 0){
 
         window.addEventListener("orientationchange", function() {
             if(window.orientation == 0){
+                console.log(window.orientation);
                document.getElementById('bg-div').style.cssText = "transform: rotate(-90deg);transform-origin: left top;width: 100vh;height: 100vw;overflow-x: hidden;position:absolute;background-repeat: no-repeat;background-size: cover;top: 100%;left: 0;";
                document.getElementById('bg-div').style.backgroundImage = "url('./imgs/img-"+idSet+".jpg')";
             }
             else  if(window.orientation == 90){
-                
+                console.log(window.orientation);                
                 document.getElementById('bg-div').style.cssText ="";
                 document.getElementById('bg-div').style.backgroundImage = "url('./imgs/img-"+idSet+".jpg')";
              }
@@ -49,6 +50,7 @@ function render(idSet){
         randomizeId();
     }
     else{
+        
         document.getElementById('plane-desc').innerHTML='';
         document.getElementById('bg-div').style.backgroundImage = "url('./imgs/img-"+idSet+".jpg')";
  
@@ -69,15 +71,17 @@ var goFS = document.getElementById('goFS');
             
         window.addEventListener("orientationchange", function() {
             if(window.orientation == 0){
+                console.log(window.orientation);
                document.getElementById('bg-div').style.cssText = "transform: rotate(-90deg);transform-origin: left top;width: 100vh;height: 100vw;overflow-x: hidden;position:absolute;background-repeat: no-repeat;background-size: cover;top: 100%;left: 0;";
                document.getElementById('bg-div').style.backgroundImage = "url('./imgs/img-"+idSet+".jpg')";
             }
-            else  if(window.orientation == 90){
-                
+            else  if(window.orientation == 90)||(window.orientation == 180){
+                console.log(window.orientation);
                 document.getElementById('bg-div').style.cssText ="";
                 document.getElementById('bg-div').style.backgroundImage = "url('./imgs/img-"+idSet+".jpg')";
              }
              else {
+                 console.log(window.orientation);
                 document.getElementById('bg-div').style.cssText = "transform: rotate(-90deg);transform-origin: left top;width: 100vh;height: 100vw;overflow-x: hidden;position:absolute;background-repeat: no-repeat;background-size: cover;top: 100%;left: 0;";
                 document.getElementById('bg-div').style.backgroundImage = "url('./imgs/img-"+idSet+".jpg')";
              }
