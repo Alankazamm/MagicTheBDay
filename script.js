@@ -1,3 +1,26 @@
+if(window.orientation == 0){
+    document.getElementById('bg-div').style.cssText = "transform: rotate(-90deg);transform-origin: left top;width: 100vh;height: 100vw;overflow-x: hidden;position:absolute;background-repeat: no-repeat;background-size: cover;top: 100%;left: 0;";
+    
+ }
+
+        window.addEventListener("orientationchange", function() {
+            if(window.orientation == 0){
+               document.getElementById('bg-div').style.cssText = "transform: rotate(-90deg);transform-origin: left top;width: 100vh;height: 100vw;overflow-x: hidden;position:absolute;background-repeat: no-repeat;background-size: cover;top: 100%;left: 0;";
+               document.getElementById('bg-div').style.backgroundImage = "url('./imgs/img-"+idSet+".jpg')";
+            }
+            else{
+                document.getElementById('bg-div').style.cssText ="";
+                document.getElementById('bg-div').style.backgroundImage = "url('./imgs/img-"+idSet+".jpg')";
+             }
+          }, false);
+
+
+    
+   
+
+
+
+
 
 let textArray = [
     "banana", "maçaResize the background image to cover the entire container *Resize the background image to cover the entire container *Resize the background image to cover the entire container *Resize the background image to cover the entire container *", "cacau", "gato"," cachorro"
@@ -37,7 +60,19 @@ var goFS = document.getElementById('goFS');
     'click',
     function () {
         if(fs === false){
-            document.getElementById('bg-div').requestFullscreen();
+            document.getElementById('fs-check').requestFullscreen();
+            
+        window.addEventListener("orientationchange", function() {
+            if(window.orientation == 0){
+               document.getElementById('bg-div').style.cssText = "transform: rotate(-90deg);transform-origin: left top;width: 100vh;height: 100vw;overflow-x: hidden;position:absolute;background-repeat: no-repeat;background-size: cover;top: 100%;left: 0;";
+               document.getElementById('bg-div').style.backgroundImage = "url('./imgs/img-"+idSet+".jpg')";
+            }
+            else{
+                document.getElementById('bg-div').style.cssText ="";
+                document.getElementById('bg-div').style.backgroundImage = "url('./imgs/img-"+idSet+".jpg')";
+          
+             }
+          }, false);
            
             fs = true;
         }

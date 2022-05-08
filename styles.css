@@ -86,7 +86,7 @@ body{
     
 }
 
-@media only screen and (min-width: 320px) and (max-width: 767px) and (orientation: portrait) {
+/*@media only screen and (min-width: 320px) and (max-width: 767px) and (orientation: portrait) {
     #bg-div {
       transform: rotate(-90deg);
       transform-origin: left top;
@@ -95,11 +95,11 @@ body{
       overflow-x: hidden;
     position:absolute;
     
-    background-repeat: no-repeat; /* Do not repeat the image */
-    background-size: cover; /* Resize the background image to cover the entire container */
+    background-repeat: no-repeat;  
+    background-size: cover; 
       top: 100%;
       left: 0;
     }
     
-  }
+  }*/
 
