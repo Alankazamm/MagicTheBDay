@@ -9,7 +9,7 @@ if(window.orientation == 0){
                document.getElementById('bg-div').style.cssText = "transform: rotate(-90deg);transform-origin: left top;width: 100vh;height: 100vw;overflow-x: hidden;position:absolute;background-repeat: no-repeat;background-size: cover;top: 100%;left: 0;";
                document.getElementById('bg-div').style.backgroundImage = "url('./imgs/img-"+idSet+".jpg')";
             }
-            else  if(window.orientation == 90){
+            else  if((window.orientation == 90)||(window.orientation == 180)){
                 console.log(window.orientation);                
                 document.getElementById('bg-div').style.cssText ="";
                 document.getElementById('bg-div').style.backgroundImage = "url('./imgs/img-"+idSet+".jpg')";
@@ -75,7 +75,7 @@ var goFS = document.getElementById('goFS');
                document.getElementById('bg-div').style.cssText = "transform: rotate(-90deg);transform-origin: left top;width: 100vh;height: 100vw;overflow-x: hidden;position:absolute;background-repeat: no-repeat;background-size: cover;top: 100%;left: 0;";
                document.getElementById('bg-div').style.backgroundImage = "url('./imgs/img-"+idSet+".jpg')";
             }
-            else  if(window.orientation == 90)||(window.orientation == 180){
+            else  if((window.orientation == 90)||(window.orientation == 180)){
                 console.log(window.orientation);
                 document.getElementById('bg-div').style.cssText ="";
                 document.getElementById('bg-div').style.backgroundImage = "url('./imgs/img-"+idSet+".jpg')";
