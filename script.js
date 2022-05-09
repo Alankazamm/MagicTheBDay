@@ -1,20 +1,21 @@
-if(window.orientation == 0){
-    document.getElementById('bg-div').style.cssText = "transform: rotate(-90deg);transform-origin: left top;width: 100vh;height: 100vw;overflow-x: hidden;position:absolute;background-repeat: no-repeat;background-size: cover;top: 100%;left: 0;";
+//if(window.orientation == 0){
+   // document.getElementById('bg-div').style.cssText = "transform: rotate(-90deg);transform-origin: left top;width: 100vh;height: 100vw;overflow-x: hidden;position:absolute;background-repeat: no-repeat;background-size: cover;top: 100%;left: 0;";
     
- }
+ //}
 
-        window.addEventListener("orientationchange", function() {
-            if(window.orientation == 0){
+ screen.orientation.addEventListener("change", function() {
+            if(screen.orientation.type == 'landscape-primary'){
                 document.getElementById('bg-div').style.backgroundColor="blue";
                // console.log(window.orientation);
                //document.getElementById('bg-div').style.cssText = "transform: rotate(-90deg);transform-origin: left top;width: 100vh;height: 100vw;overflow-x: hidden;position:absolute;background-repeat: no-repeat;background-size: cover;top: 100%;left: 0;";
               // document.getElementById('bg-div').style.backgroundImage = "url('./imgs/img-"+idSet+".jpg')";
             }
-            else  if((window.orientation == 90)){
-                document.getElementById('bg-div').style.backgroundColor="red";
-                //console.log(window.orientation);                
+             else if(screen.orientation.type  == 'portrait-primary'){
+                console.log(screen.orientation)
+                   document.getElementById('bg-div').style.backgroundColor="red";
+                            
                
-                //document.getElementById('bg-div').style.backgroundImage = "url('./imgs/img-"+idSet+".jpg')";
+                document.getElementById('bg-div').style.backgroundImage = "url('./imgs/img-"+idSet+".jpg')";
              }
              else {
                 document.getElementById('bg-div').style.backgroundColor="yellow";
