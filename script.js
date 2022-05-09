@@ -1,16 +1,16 @@
-//if(window.orientation == 0){
-   // document.getElementById('bg-div').style.cssText = "transform: rotate(-90deg);transform-origin: left top;width: 100vh;height: 100vw;overflow-x: hidden;position:absolute;background-repeat: no-repeat;background-size: cover;top: 100%;left: 0;";
+if(screen.orientation.type == 'portrait-primary'){
+ document.getElementById('bg-div').style.cssText = "transform: rotate(-90deg);transform-origin: left top;width: 100vh;height: 100vw;overflow-x: hidden;position:absolute;background-repeat: no-repeat;background-size: cover;top: 100%;left: 0;";
     
- //}
+}
 
  screen.orientation.addEventListener("change", function() {
-            if(screen.orientation.type == 'landscape-primary'){
+            if(screen.orientation.type == 'portrait-primary'){
     
                document.getElementById('bg-div').style.cssText = "transform: rotate(-90deg);transform-origin: left top;width: 100vh;height: 100vw;overflow-x: hidden;position:absolute;background-repeat: no-repeat;background-size: cover;top: 100%;left: 0;";
                document.getElementById('bg-div').style.backgroundImage = "url('./imgs/img-"+idSet+".jpg')";
             }
-             else if(screen.orientation.type  == 'portrait-primary'){
-           
+             else if(screen.orientation.type  == 'landscape-primary'){
+                document.getElementById('bg-div').style.cssText ="";
                 document.getElementById('bg-div').style.backgroundImage = "url('./imgs/img-"+idSet+".jpg')";
              }
              else {
