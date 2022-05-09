@@ -1,16 +1,18 @@
+
+
 if(window.orientation == 0){
     document.getElementById('bg-div').style.cssText = "transform: rotate(-90deg);transform-origin: left top;width: 100vh;height: 100vw;overflow-x: hidden;position:absolute;background-repeat: no-repeat;background-size: cover;top: 100%;left: 0;";
     
  }
 
-        window.addEventListener("orientationchange", function() {
-            if(window.orientation == 0){
+        screen.addEventListener("change", function() {
+            if(screen.orientation === "landscape-primary"){
                 document.getElementById('bg-div').style.backgroundColor="yellow";
                // console.log(window.orientation);
                //document.getElementById('bg-div').style.cssText = "transform: rotate(-90deg);transform-origin: left top;width: 100vh;height: 100vw;overflow-x: hidden;position:absolute;background-repeat: no-repeat;background-size: cover;top: 100%;left: 0;";
               // document.getElementById('bg-div').style.backgroundImage = "url('./imgs/img-"+idSet+".jpg')";
             }
-            else  if((window.orientation == 90)){
+            else  if((screen.orientation == 'portrait-secondary')){
                 document.getElementById('bg-div').style.backgroundColor="blue";
                 //console.log(window.orientation);                
                
