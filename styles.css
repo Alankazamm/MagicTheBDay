@@ -40,9 +40,11 @@ body{
     padding-left:14px;
     padding-right:14px;
     margin-bottom:10px;
+    font-size:1rem;
    
 }
 #nome{
+
     position: absolute;
     color:yellowgreen;
     background-color:rgba(0, 0, 0, 0.6);
@@ -58,6 +60,7 @@ body{
 
 }
 #caos{
+    font-size:0.8rem;
     position:absolute;
     top:200px;
     background-color:rgba(0, 0, 0, 0.6);
