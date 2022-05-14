@@ -13,20 +13,60 @@ body{
 }
 
 #plane-desc{
-    
     position:absolute;
     top:100px;
     letter-spacing:2px;
     width:80%;
-    color:rgb(231, 251, 255);
     background-color:rgba(0, 0, 0, 0.6);
     padding-left:14px;
     padding-right:14px;
-    word-break:break-all;
+    word-break:normal;
     text-shadow:0.2px 0.5px 2px rgba(0, 0, 0, 0.6);
     word-wrap:break-word;
+    margin-left:10%;
+    color:beige;
+    border-radius:10px;
     font-family: 'Bebas Neue', serif;
     
+}
+#plane-desc h2{
+    position:absolute;
+    top:100px;
+    background-color:rgba(0, 0, 0, 0.6);
+    word-break:normal;
+    text-shadow:0.2px 0.5px 2px rgba(0, 0, 0, 0.6);
+    word-wrap:break-word;
+    border-radius:10px;
+    padding-left:14px;
+    padding-right:14px;
+   
+}
+#nome{
+    position: absolute;
+    color:yellowgreen;
+    background-color:rgba(0, 0, 0, 0.6);
+    word-break:normal;
+    text-shadow:0.2px 0.5px 2px rgba(0, 0, 0, 0.6);
+    word-wrap:break-word;
+    border-radius:10px;
+    padding-left:14px;
+    padding-right:14px;
+    margin-bottom:10px;
+    
+
+
+}
+#caos{
+    position:absolute;
+    top:230px;
+    background-color:rgba(0, 0, 0, 0.6);
+    word-break:normal;
+    color:red;
+    text-shadow:0.6px 0.8px 2px rgba(0, 0, 0, 0.86);
+    word-wrap:break-word;
+    border-radius:10px;
+    padding-left:14px;
+    padding-right:14px;
 }
 
 #bg-div{
@@ -36,7 +76,7 @@ body{
     height: 100vh;
     background-repeat: no-repeat; /* Do not repeat the image */
     background-size: cover; /* Resize the background image to cover the entire container */
-    transition: background-image 0.3s ease-in;
+    transition: background-image 0.5s ease-in-out;
 
 }
 

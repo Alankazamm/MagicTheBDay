@@ -53,7 +53,7 @@ function renderCount(value,lastcount){
     count=lastcount+value;
     countDiv.setAttribute('placeholder',count);
 }
-renderCount(0,23);
+renderCount(0,22);
 const power1 = document.getElementById('power1-button');
 const power2 = document.getElementById('power2-button');
 const power3 = document.getElementById('power3-button');
@@ -68,7 +68,7 @@ power3.addEventListener('click', ()=>{
     renderCount(-1,count);
 })
 power4.addEventListener('click', ()=>{
-    renderCount(-23,count);
+    renderCount(-22,count);
 })
 
 //editando valor
